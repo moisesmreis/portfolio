@@ -1,17 +1,28 @@
+import ButtonLight from "../components/buttonLight"
+import Twitter from '@/pages/content/twitter.svg'
+import Github from '@/pages/content/github.svg'
+import ArrowRight from '@/pages/content/arrow-right.svg'
+import Sun from '@/pages/content/sun.svg'
+import Moon from '@/pages/content/moon.svg'
+
 export default function Header() {
     return (
         <>
-            <header className="grid grid-cols-2 md:grid-cols-4" id="header-wrapper">
-                <div className="flex flex-row p-6 content-center justify-center items-center" id="header-logo">
-                    <span className="select-none font-black tracking-widest uppercase">La Monhang</span>
+            <header className="grid-two-four" id="header-wrapper">
+                <div className="flex-sub-header" id="header-logo">
+                    <span className="title-logo">La Monhang</span>
                 </div>
-                <div className="hidden md:flex flex-row p-6 content-center justify-center items-center" id="header-lang">                    
+                <div className="flex-sub-header" id="header-lang">
+                    <ButtonLight image={ArrowRight}>Port</ButtonLight>
+                    <ButtonLight image={ArrowRight}>Eng</ButtonLight>
                 </div>
-                <div className="hidden md:flex flex-row p-6 content-center justify-center items-center" id="header-theme">                    
+                <div className="flex-sub-header" id="header-theme">
+                    <ButtonLight image={Sun}>Light</ButtonLight>
+                    <ButtonLight image={Moon}>Dark</ButtonLight>
                 </div>
-                <div className="hidden md:flex flex-row p-6 content-center justify-center items-center" id="header-social">
-                </div>
-                <div className="flex md:hidden flex-row p-6 content-center justify-center items-center" id="header-menu">
+                <div className="flex-sub-header" id="header-social">
+                    <ButtonLight image={Twitter}>Twitter</ButtonLight>
+                    <ButtonLight image={Github}>GitHub</ButtonLight>
                 </div>
             </header>
         </>

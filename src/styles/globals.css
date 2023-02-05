@@ -2,8 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base layer for custom styling */
+
 @layer base {
   body {
     @apply font-body
   }
+}
+
+/* Utilities and other classes */
+
+@layer utilities {
+  .grid-one-two {
+    @apply grid grid-cols-1 md:grid-cols-2
+  }
+  .grid-two-four {
+    @apply grid grid-cols-2 md:grid-cols-4
+  }
+  .flex-row-center {
+    @apply flex flex-row content-center justify-center items-center
+  }
+  .flex-row-start {
+    @apply flex flex-row content-center justify-start items-center
+  }
+  .flex-col-start {
+    @apply flex flex-col justify-start content-center
+  }
+}
+
+/* 1. GRID 
+ * List of components made with
+ * the grid system in CSS
+ */
+
+.grid-header {
+  @apply grid-two-four border-b
+}
+.grid-cta {
+  @apply grid-one-two px-12
+}
+
+/* 2. FLEX 
+ * List of components made with
+ * the flex system in CSS
+ */
+
+.flex-sub-header {
+  @apply flex-row-start px-12 py-6 gap-6
+}
+.flex-sub-cta {
+  @apply flex-col-start gap-6 
+}
+
+/* 3. TIPOGRAPHY 
+ * List of components made to
+ * control the texts and title
+ * items on the UI
+ */
+
+.title-logo {
+  @apply select-none font-black tracking-widest uppercase
+}
+.title-big {
+  @apply text-6xl leading-snug
+}
+
+/* 4. BUTTONS 
+ * List of components made to
+ * control the button items on the UI
+ */
+
+.button-light {
+  @apply flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
+}
+.button-light-img {
+  @apply w-4 h-4 m-0 p-0 object-cover rounded-full
+}
+
+/* 5. BADGES 
+ * List of components made to
+ * control the badge items on the UI
+ */
+
+.badge-dark {
+  @apply lowercase bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
 }
