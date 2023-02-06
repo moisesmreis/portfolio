@@ -28,6 +28,9 @@
   .flex-col-start {
     @apply flex flex-col justify-start content-center
   }
+  .flex-col-center {
+    @apply flex flex-col justify-center content-center
+  }
 }
 
 /* 1. GRID 
@@ -39,7 +42,7 @@
   @apply grid-two-four border-b
 }
 .grid-cta {
-  @apply grid-one-two px-12
+  @apply grid-one-two px-12 py-12 content-center
 }
 
 /* 2. FLEX 
@@ -52,6 +55,9 @@
 }
 .flex-sub-cta {
   @apply flex-col-start gap-6 
+}
+.flex-center-cta {
+  @apply flex-col-center gap-6 
 }
 
 /* 3. TIPOGRAPHY 
@@ -78,6 +84,9 @@
 .button-light-img {
   @apply w-4 h-4 m-0 p-0 object-cover rounded-full
 }
+.button-cta {
+  @apply flex flex-row gap-3 items-center justify-center content-center focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-8 py-4 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900
+}
 
 /* 5. BADGES 
  * List of components made to
@@ -85,5 +94,23 @@
  */
 
 .badge-dark {
-  @apply lowercase bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
+  @apply text-gray-800 bg-gray-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
+}
+
+/* 6. COMPONENTS 
+ * List of components made to
+ * control general components on the UI
+ */
+
+.image-group-flex {
+  @apply flex flex-row items-center gap-1 justify-center content-center
+}
+.image-group-img-left {
+  @apply h-[28rem] w-48 object-cover rounded-tl-2xl rounded-bl-2xl
+}
+.image-group-img-middle {
+  @apply h-[28rem] w-36 object-cover
+}
+.image-group-img-right {
+  @apply h-[28rem] w-24 object-cover rounded-tr-2xl rounded-br-2xl
 }
