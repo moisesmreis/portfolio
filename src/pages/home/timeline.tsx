@@ -1,7 +1,7 @@
 const Timeline = () => {
     return (
         <>
-            <section className="grid-timeline" id="home-timeline">
+            <section className="grid-timeline" id="home-timeline">                
                 <ol className="timeline-ol">
                     <li className="ml-6">
                         <span className="timeline-circle">😺</span>

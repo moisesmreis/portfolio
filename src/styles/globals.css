@@ -31,6 +31,9 @@
   .flex-col-center {
     @apply flex flex-col justify-center content-center
   }
+  .absolute-center {
+    @apply left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]
+  }
 }
 
 /* 1. GRID 
@@ -46,6 +49,12 @@
 }
 .grid-timeline {
   @apply p-12
+}
+.grid-nav {
+  @apply grid grid-cols-6 grid-rows-6
+}
+.grid-sub-nav {
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-12
 }
 
 /* 2. FLEX 
@@ -76,7 +85,7 @@
   @apply text-5xl leading-snug font-black
 }
 .title-nav {
-  @apply text-white font-black text-2xl
+  @apply lowercase underline text-white font-medium
 }
 
 /* 4. BUTTONS 
@@ -116,7 +125,7 @@
   @apply relative flex flex-col gap-10 border-l border-gray-200 dark:border-gray-700
 }
 .timeline-circle {
-  @apply absolute flex items-center justify-center w-6 h-6 bg-white border rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-gray-900 dark:bg-blue-900
+  @apply absolute flex items-center justify-center w-6 h-6 bg-neutral-50 rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-gray-900 dark:bg-blue-900
 }
 .timeline-wrap-flex {
   @apply items-center justify-between p-4 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600
