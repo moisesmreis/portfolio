@@ -75,6 +75,9 @@
 .title-big {
   @apply text-5xl leading-snug font-black
 }
+.title-nav {
+  @apply text-white font-black text-2xl
+}
 
 /* 4. BUTTONS 
  * List of components made to
@@ -89,6 +92,9 @@
 }
 .button-cta {
   @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-8 py-4 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
+}
+.button-basic {
+  @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline text-white;
 }
 
 /* 5. BADGES 
@@ -113,10 +119,10 @@
   @apply absolute flex items-center justify-center w-6 h-6 bg-white border rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-gray-900 dark:bg-blue-900
 }
 .timeline-wrap-flex {
-  @apply items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600
+  @apply items-center justify-between p-4 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600
 }
 .timeline-wrap {
-  @apply p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600
+  @apply p-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600
 }
 .timeline-wrap-sub-flex {
   @apply items-center justify-between mb-3 sm:flex
