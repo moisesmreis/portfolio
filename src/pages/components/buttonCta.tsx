@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
 
 interface Props {
   childComp?: React.ReactNode;
@@ -11,8 +9,7 @@ interface Props {
 const ButtonCta: React.FC<Props> = ({ children, childComp }) => { 
   return (
     <button className="button-cta">      
-      <span>{children}</span>
-      {childComp}
+      <span>{children} 👋</span>
     </button>
   );
 }

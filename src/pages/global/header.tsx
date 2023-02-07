@@ -1,9 +1,5 @@
 import ButtonLight from "../components/buttonLight"
-import Twitter from '@/pages/content/twitter.svg'
-import Github from '@/pages/content/github.svg'
-import ArrowRight from '@/pages/content/arrow-right.svg'
-import Sun from '@/pages/content/sun.svg'
-import Moon from '@/pages/content/moon.svg'
+import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon, ArrowRightIcon } from "@radix-ui/react-icons"
 
 export default function Header() {
     return (
@@ -13,16 +9,16 @@ export default function Header() {
                     <span className="title-logo">La Monhang</span>
                 </div>
                 <div className="flex-sub-header" id="header-lang">
-                    <ButtonLight image={ArrowRight}>Port</ButtonLight>
-                    <ButtonLight image={ArrowRight}>Eng</ButtonLight>
+                    <ButtonLight childIcon={<ArrowRightIcon />}>Port</ButtonLight>
+                    <ButtonLight childIcon={<ArrowRightIcon />}>Eng</ButtonLight>
                 </div>
                 <div className="flex-sub-header" id="header-theme">
-                    <ButtonLight image={Sun}>Light</ButtonLight>
-                    <ButtonLight image={Moon}>Dark</ButtonLight>
+                    <ButtonLight childIcon={<SunIcon />}>Light</ButtonLight>
+                    <ButtonLight childIcon={<MoonIcon />}>Dark</ButtonLight>
                 </div>
                 <div className="flex-sub-header" id="header-social">
-                    <ButtonLight image={Twitter}>Twitter</ButtonLight>
-                    <ButtonLight image={Github}>GitHub</ButtonLight>
+                    <ButtonLight childIcon={<TwitterLogoIcon />}>Twitter</ButtonLight>
+                    <ButtonLight childIcon={<GitHubLogoIcon />}>GitHub</ButtonLight>
                 </div>
             </header>
         </>

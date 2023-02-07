@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body
+    @apply font-body text-[#333333] bg-neutral-50
   }
 }
 
@@ -42,7 +42,10 @@
   @apply grid-two-four border-b
 }
 .grid-cta {
-  @apply grid-one-two px-12 py-12 content-center
+  @apply grid p-12 content-center gap-6
+}
+.grid-timeline {
+  @apply p-12
 }
 
 /* 2. FLEX 
@@ -57,7 +60,7 @@
   @apply flex-col-start gap-6 
 }
 .flex-center-cta {
-  @apply flex-col-center gap-6 
+  @apply flex-col-center gap-6 relative
 }
 
 /* 3. TIPOGRAPHY 
@@ -70,7 +73,7 @@
   @apply select-none font-black tracking-widest uppercase
 }
 .title-big {
-  @apply text-6xl leading-snug
+  @apply text-5xl leading-snug font-black
 }
 
 /* 4. BUTTONS 
@@ -85,7 +88,7 @@
   @apply w-4 h-4 m-0 p-0 object-cover rounded-full
 }
 .button-cta {
-  @apply flex flex-row gap-3 items-center justify-center content-center focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-8 py-4 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900
+  @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-8 py-4 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
 }
 
 /* 5. BADGES 
@@ -94,23 +97,42 @@
  */
 
 .badge-dark {
-  @apply text-gray-800 bg-gray-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
+  @apply bg-gray-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
 }
 
 /* 6. COMPONENTS 
  * List of components made to
- * control general components on the UI
+ * control some general components 
+ * on the UI
  */
 
-.image-group-flex {
-  @apply flex flex-row items-center gap-1 justify-center content-center
+.timeline-ol {
+  @apply relative flex flex-col gap-10 border-l border-gray-200 dark:border-gray-700
 }
-.image-group-img-left {
-  @apply h-[28rem] w-48 object-cover rounded-tl-2xl rounded-bl-2xl
+.timeline-circle {
+  @apply absolute flex items-center justify-center w-6 h-6 bg-white border rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-gray-900 dark:bg-blue-900
 }
-.image-group-img-middle {
-  @apply h-[28rem] w-36 object-cover
+.timeline-wrap-flex {
+  @apply items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600
 }
-.image-group-img-right {
-  @apply h-[28rem] w-24 object-cover rounded-tr-2xl rounded-br-2xl
+.timeline-wrap {
+  @apply p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600
+}
+.timeline-wrap-sub-flex {
+  @apply items-center justify-between mb-3 sm:flex
+}
+.timeline-time {
+  @apply mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0
+}
+.timeline-text {
+  @apply text-sm font-normal text-gray-500 dark:text-gray-300
+}
+.timeline-text-feat {
+  @apply font-semibold text-blue-600 dark:text-blue-500
+}
+.timeline-text-box {
+  @apply bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300
+}
+.timeline-wrap-desc {
+  @apply p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300
 }
