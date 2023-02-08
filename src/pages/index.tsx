@@ -16,9 +16,6 @@ export default function Home() {
       <Cta />
       <Nav />
       <Timeline />
-      <section id="home-bottom=" className="flex-col-start gap-6 p-12" >
-        <h1 className="title-big">E aí? Consegui te convencer a trabalhar comigo? É só enviar uma mensagem que marcaremos uma reunião</h1>
-      </section>
     </>
   )
 }

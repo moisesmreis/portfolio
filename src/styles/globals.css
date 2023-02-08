@@ -45,7 +45,7 @@
  */
 
 .grid-header {
-  @apply grid-two-four border-b
+  @apply grid-two-four
 }
 .grid-cta {
   @apply grid p-12 content-center gap-6

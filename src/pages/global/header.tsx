@@ -4,7 +4,7 @@ import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon, ArrowRightIcon } fr
 export default function Header() {
     return (
         <>
-            <header className="grid-two-four" id="header-wrapper">
+            <header className="grid-header" id="header-wrapper">
                 <div className="flex-sub-header" id="header-logo">
                     <span className="title-logo">La Monhang</span>
                 </div>
