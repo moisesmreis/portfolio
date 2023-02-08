@@ -6,7 +6,7 @@ interface Props {
 
 const Badge: React.FC<Props> = ({ children }) => { 
   return (
-    <span className="badge-dark">{children}</span>
+    <span className="badge-main">{children}</span>
   );
 }
 

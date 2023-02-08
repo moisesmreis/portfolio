@@ -16,6 +16,9 @@
   .grid-one-two {
     @apply grid grid-cols-1 md:grid-cols-2
   }
+  .grid-one-three {
+    @apply grid grid-cols-1 md:grid-cols-3
+  }
   .grid-two-four {
     @apply grid grid-cols-2 md:grid-cols-4
   }
@@ -51,10 +54,10 @@
   @apply p-12
 }
 .grid-nav {
-  @apply grid grid-cols-6 grid-rows-6
+  @apply grid-one-three gap-2
 }
 .grid-sub-nav {
-  @apply relative overflow-hidden gap-6 grid justify-start content-start p-12
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-12 rounded-2xl
 }
 
 /* 2. FLEX 
@@ -111,7 +114,7 @@
  * control the badge items on the UI
  */
 
-.badge-dark {
+.badge-main {
   @apply bg-gray-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
 }
 

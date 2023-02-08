@@ -9,7 +9,7 @@ interface Props {
 const ButtonCta: React.FC<Props> = ({ children, childComp }) => { 
   return (
     <button className="button-cta">      
-      <span>{children} 👋</span>
+      <span>{children}</span>
     </button>
   );
 }
