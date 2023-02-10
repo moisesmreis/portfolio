@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Cta from './home/cta'
 import Nav from './home/nav'
 import Timeline from './home/timeline'
-import ButtonCta from './components/buttonCta'
 
 export default function Home() {
   return (

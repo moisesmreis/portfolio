@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import Badge from "../components/badge"
 import ButtonCta from "../components/buttonCta";
 
-const Cta = () => {  
+const Cta = () => {
     return (
         <>
             <section className="grid-cta" id="home-cta">
@@ -16,10 +17,12 @@ const Cta = () => {
                         <Badge>Tailwind CSS</Badge>
                         <Badge>UI</Badge>
                         <Badge>UX</Badge>
-                    </div>                    
+                    </div>
                 </div>
                 <div className="flex-center-cta">
-                    <ButtonCta>Fale comigo 👋</ButtonCta>
+                    <Link href="/contato">
+                        <ButtonCta>Fale comigo 👋</ButtonCta>
+                    </Link>
                 </div>
             </section>
         </>

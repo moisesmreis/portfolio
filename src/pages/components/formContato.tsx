@@ -1,7 +1,5 @@
 import React from "react";
 import ButtonCta from "./buttonCta";
-import { Dropdown } from "flowbite";
-import type { DropdownOptions, DropdownInterface } from "flowbite";
 
 interface Props {
     children?: React.ReactNode;
