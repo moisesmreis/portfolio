@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body text-[#333333] bg-neutral-50
+    @apply font-body text-[#333333] bg-neutral-50 overflow-x-hidden
   }
 }
 
@@ -57,7 +57,7 @@
   @apply grid-one-three gap-2
 }
 .grid-sub-nav {
-  @apply relative overflow-hidden gap-6 grid justify-start content-start p-12 rounded-2xl
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 lg:p-12 rounded-2xl
 }
 
 /* 2. FLEX 
@@ -85,7 +85,7 @@
   @apply select-none font-black tracking-widest uppercase
 }
 .title-big {
-  @apply text-5xl leading-snug font-black
+  @apply text-4xl lg:text-5xl leading-snug font-black
 }
 .title-nav {
   @apply lowercase underline text-white font-medium
@@ -99,14 +99,14 @@
 .button-light {
   @apply flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
 }
-.button-light-img {
-  @apply w-4 h-4 m-0 p-0 object-cover rounded-full
-}
 .button-cta {
   @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-8 py-4 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
 }
 .button-basic {
-  @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline text-white;
+  @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline;
+}
+.button-icon {
+  @apply flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm p-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
 }
 
 /* 5. BADGES 
@@ -161,7 +161,7 @@
  */
 
 .form-wrap {
-  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 focus-visible:!ring-blue-500 focus-visible:!border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
 }
 .form-label {
   @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
@@ -178,4 +178,3 @@
 .form-checkbox-helper {
   @apply text-xs font-normal text-gray-500 dark:text-gray-400
 }
-

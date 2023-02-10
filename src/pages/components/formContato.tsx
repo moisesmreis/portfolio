@@ -10,7 +10,7 @@ const FormContato: React.FC<Props> = ({ children }) => {
         <form>
             <div className="mb-6">
                 <label htmlFor="name" className="form-label">Seu nome</label>
-                <input type="name" id="name" className="form-wrap" placeholder="João Oliveira" required></input>
+                <input type="text" id="name" className="form-wrap" placeholder="João Oliveira" required></input>
                 <p className="form-helper">É só inserir o seu nome e último sobrenome</p>
             </div>
             <div className="mb-6">

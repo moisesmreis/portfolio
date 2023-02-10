@@ -6,7 +6,7 @@ export default function Contato() {
   return (
     <>
       <Head>
-        <title>Fale comigo 🖁</title>
+        <title>Fale comigo // Vamos começar a trabalhar</title>
         <meta name="description" content="Uma feitoria de ideias" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
