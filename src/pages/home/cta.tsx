@@ -20,7 +20,7 @@ const Cta = () => {
                     </div>
                 </div>
                 <div className="flex-center-cta">
-                    <Link href="/contato">
+                    <Link className="w-fit" href="/contato">
                         <ButtonCta>Fale comigo 👋</ButtonCta>
                     </Link>
                 </div>

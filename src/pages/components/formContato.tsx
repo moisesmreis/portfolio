@@ -7,7 +7,7 @@ interface Props {
 
 const FormContato: React.FC<Props> = ({ children }) => {
     return (
-        <form>
+        <form className="p-0 !w-full !max-w-[36rem]">
             <div className="mb-6">
                 <label htmlFor="name" className="form-label">Seu nome</label>
                 <input type="text" id="name" className="form-wrap" placeholder="João Oliveira" required></input>

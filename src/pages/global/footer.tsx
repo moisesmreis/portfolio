@@ -1,16 +1,28 @@
 import ButtonBasic from "../components/buttonBasic"
+import Link from "next/link"
+
 export default function Footer() {
     return (
         <>
-            <footer className="flex flex-col lg:flex-row justify-start lg:justify-between px-12 gap-6 lg:gap-12">
-                <div className="py-6 flex-col lg:flex-row-center gap-12">
-                    <ButtonBasic>Início</ButtonBasic>
-                    <ButtonBasic>Contato</ButtonBasic>
-                    <ButtonBasic>Github</ButtonBasic>
-                    <ButtonBasic>Linkedin</ButtonBasic>
-                    <ButtonBasic>Twitter</ButtonBasic>
+            <footer className="flex-footer-wrap">
+                <div className="flex-sub-footer-top">
+                    <Link className="w-fit" href="/">
+                        <ButtonBasic>Início</ButtonBasic>
+                    </Link>
+                    <Link className="w-fit" href="/contato">
+                        <ButtonBasic>Contato</ButtonBasic>
+                    </Link>
+                    <Link className="w-fit" href="https://github.com/moisesmreis">
+                        <ButtonBasic>Github</ButtonBasic>
+                    </Link>
+                    <Link className="w-fit" href="https://twitter.com/MoissMoreiraRe1">
+                        <ButtonBasic>Twitter</ButtonBasic>
+                    </Link>
+                    <Link className="w-fit" href="https://www.linkedin.com/in/moisesmoreirareis/">
+                        <ButtonBasic>Linkedin</ButtonBasic>
+                    </Link>
                 </div>
-                <div className="py-6 justify-start lg:flex-row-center">
+                <div className="flex-sub-footer-bottom">
                     <span className="text-sm">Copyright © 2023 La Monhang.</span>
                 </div>
             </footer>

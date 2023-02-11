@@ -14,13 +14,13 @@
 
 @layer utilities {
   .grid-one-two {
-    @apply grid grid-cols-1 md:grid-cols-2
+    @apply grid grid-cols-1 xl:grid-cols-2
   }
   .grid-one-three {
-    @apply grid grid-cols-1 md:grid-cols-3
+    @apply grid grid-cols-1 xl:grid-cols-3
   }
   .grid-two-four {
-    @apply grid grid-cols-2 md:grid-cols-4
+    @apply grid grid-cols-2 xl:grid-cols-4
   }
   .flex-row-center {
     @apply flex flex-row content-center justify-center items-center
@@ -57,7 +57,7 @@
   @apply grid-one-three gap-2
 }
 .grid-sub-nav {
-  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 lg:p-12 rounded-2xl
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 xl:p-12 rounded-2xl
 }
 
 /* 2. FLEX 
@@ -66,13 +66,22 @@
  */
 
 .flex-sub-header {
-  @apply flex-row-start px-12 py-6 gap-6
+  @apply flex-row-start px-12 py-6 gap-6 !justify-center xl:!justify-start 
 }
 .flex-sub-cta {
   @apply flex-col-start gap-6 
 }
 .flex-center-cta {
   @apply flex-col-center gap-6 relative
+}
+.flex-footer-wrap {
+  @apply flex flex-col md:flex-row justify-start md:justify-between px-12 gap-6 xl:gap-12
+}
+.flex-sub-footer-top {
+  @apply py-0 xl:py-6 flex-col md:flex-row-center gap-12
+}
+.flex-sub-footer-bottom {
+  @apply pt-0 md:pt-6 pb-6 xl:py-6 justify-start md:flex-row-center items-center
 }
 
 /* 3. TIPOGRAPHY 

@@ -2,11 +2,10 @@
 import React from "react";
 
 interface Props {
-    childComp?: React.ReactNode;
     children: React.ReactNode;
 }
 
-const ButtonBasic: React.FC<Props> = ({ children, childComp }) => {
+const ButtonBasic: React.FC<Props> = ({ children }) => {
     return (
         <button className="button-basic">
             <span>{children}</span>
