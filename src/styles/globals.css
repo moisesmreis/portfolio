@@ -45,7 +45,7 @@
  */
 
 .grid-header {
-  @apply grid-two-four
+  @apply grid grid-cols-2
 }
 .grid-cta {
   @apply grid p-12 content-center gap-6
@@ -66,7 +66,7 @@
  */
 
 .flex-sub-header {
-  @apply flex-row-start px-12 py-6 gap-6 !justify-center xl:!justify-start 
+  @apply flex flex-row content-center items-center px-12 py-6 gap-6
 }
 .flex-sub-cta {
   @apply flex-col-start gap-6 

@@ -10,15 +10,15 @@ export const validate = ({
 }) => {
     const errors: { name?: string; email?: string; message?: string } = {};
     if (!name || name.trim() === "") {
-        errors.name = "Name is required";
+        errors.name = "Você esqueceu de inserir o seu nome";
     }
     if (!email || email.trim() === "") {
-        errors.email = "Email is required";
+        errors.email = "Você esqueceu de inserir seu e-mail";
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
-        errors.email = "Invalid email address";
+        errors.email = "O e-mail inserido é inválido";
     }
     if (!message || message.trim() === "") {
-        errors.message = "Message is required";
+        errors.message = "Você esqueceu de escrever sua mensagem";
     }
     return errors;
 };

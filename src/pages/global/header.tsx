@@ -6,21 +6,17 @@ import { useTheme } from "next-themes";
 
 export default function Header() {
 
-    const {theme, setTheme} = useTheme()
+    const { theme, setTheme } = useTheme()
 
     return (
         <>
             <header className="grid-header" id="header-wrapper">
-                <div className="flex-sub-header" id="header-logo">
+                <div className="flex-sub-header justify-start" id="header-logo">
                     <Link href="/">
                         <span className="title-logo">LM.</span>
                     </Link>
                 </div>
-                <div className="!hidden xl:!flex flex-sub-header" id="header-lang">
-                    <ButtonLight childIcon={<ArrowRightIcon />}>Port</ButtonLight>
-                    <ButtonLight childIcon={<ArrowRightIcon />}>Eng</ButtonLight>
-                </div>
-                <div className="flex-sub-header" id="header-social">
+                <div className="flex-sub-header justify-end" id="header-social">
                     <Link className="!hidden xl:!block w-fit" href="https://twitter.com/MoissMoreiraRe1">
                         <ButtonLight childIcon={<TwitterLogoIcon />}>Twitter</ButtonLight>
                     </Link>
@@ -33,13 +29,11 @@ export default function Header() {
                     <Link className="!block xl:!hidden w-fit" href="https://github.com/moisesmreis">
                         <ButtonIcon childIcon={<GitHubLogoIcon />} />
                     </Link>
-                </div>
-                <div className="xl:!justify-end flex-sub-header" id="header-theme">
-                {theme === 'light' ? (
-                    <ButtonLight childIcon={<MoonIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Dark</ButtonLight>
-                ) : (
-                    <ButtonLight childIcon={<SunIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Light</ButtonLight>
-                )}
+                    {theme === 'light' ? (
+                        <ButtonLight childIcon={<MoonIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Dark</ButtonLight>
+                    ) : (
+                        <ButtonLight childIcon={<SunIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Light</ButtonLight>
+                    )}
                 </div>
             </header>
         </>

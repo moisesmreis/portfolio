@@ -72,25 +72,26 @@ export const Form = () => {
 
     return (
         <form className="w-full !max-w-[36rem]" onSubmit={handleSubmit}>
-            <Input value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""}/>
-            <Input value={values.email} onChange={handleChange} id="email" name="email" label="Seu e-mail" helper="Preencha com um email válido" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""}/>
-            <TextArea value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""}/>
-            <button className="button-light" type="submit" disabled={loading}>
-                {loading !== true ? (
-                    "Vamos começar 💪"
-                ) : (
-                    <div className="flex h-full w-full items-center justify-center ">
-                        <ComponentInstanceIcon className="h-8 w-8 animate-spin" />
-                    </div>
-                )}
-            </button>
-            <p className="mt-5 text-green-500 dark:text-green-500">
-                {success !== false ? (
-                    messageState
-                ) : (
-                    <span className="text-red-500 dark:text-red-500">{messageState}</span>
-                )}
-            </p>
+            {success !== false ? (
+                <Input disabled value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
+            ) : (
+                <Input value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
+            )}
+            {success !== false ? (
+                <Input disabled value={values.email} onChange={handleChange} id="email" name="email" label="Seu e-mail" helper="Preencha com um email válido" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
+            ) : (
+                <Input value={values.email} onChange={handleChange} id="email" name="email" label="Seu e-mail" helper="Preencha com um email válido" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
+            )}
+            {success !== false ? (
+                <TextArea disabled value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
+            ) : (
+                <TextArea value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
+            )}
+            {success !== false ? (
+                <button className="button-light select-none opacity-70 hover:bg-white dark:hover:bg-neutral-800" type="submit" disabled>Deu tudo certo ✅</button>
+            ) : (
+                <button className="button-light" type="submit">Vamos começar 💪</button>
+            )}
         </form>
     );
 
