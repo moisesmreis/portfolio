@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body text-[#333333] bg-neutral-50 overflow-x-hidden
+    @apply font-body text-[#333333] bg-neutral-50 dark:bg-[#292b2f] dark:text-[#fafafa] overflow-x-hidden
   }
 }
 
@@ -20,7 +20,7 @@
     @apply grid grid-cols-1 xl:grid-cols-3
   }
   .grid-two-four {
-    @apply grid grid-cols-2 xl:grid-cols-4
+    @apply grid grid-cols-3 xl:grid-cols-4
   }
   .flex-row-center {
     @apply flex flex-row content-center justify-center items-center
@@ -106,16 +106,16 @@
  */
 
 .button-light {
-  @apply flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
+  @apply flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
 }
 .button-cta {
-  @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-8 py-4 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
+  @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
 }
 .button-basic {
   @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline;
 }
 .button-icon {
-  @apply flex flex-row gap-3 items-center justify-center content-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm p-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
+  @apply flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm p-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
 }
 
 /* 5. BADGES 
@@ -124,7 +124,7 @@
  */
 
 .badge-main {
-  @apply bg-gray-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300
+  @apply bg-neutral-100 text-sm font-normal px-2.5 py-0.5 rounded-full dark:bg-neutral-700 dark:text-neutral-300
 }
 
 /* 6. COMPONENTS 
@@ -134,34 +134,34 @@
  */
 
 .timeline-ol {
-  @apply relative flex flex-col gap-10 border-l border-gray-200 dark:border-gray-700
+  @apply relative flex flex-col gap-10 border-l border-neutral-200 dark:border-neutral-700
 }
 .timeline-circle {
-  @apply absolute flex items-center justify-center w-6 h-6 bg-neutral-50 rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-gray-900 dark:bg-blue-900
+  @apply absolute flex items-center justify-center w-6 h-6 bg-neutral-50 rounded-full -left-3 ring-8 ring-neutral-50 dark:ring-[#292b2f] dark:bg-[#292b2f]
 }
 .timeline-wrap-flex {
-  @apply items-center justify-between p-4 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600
+  @apply items-center justify-between p-4 bg-white border border-neutral-200 rounded-lg sm:flex dark:bg-neutral-700 dark:border-neutral-600
 }
 .timeline-wrap {
-  @apply p-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600
+  @apply p-4 bg-white border border-neutral-200 rounded-lg dark:bg-neutral-700 dark:border-neutral-600
 }
 .timeline-wrap-sub-flex {
   @apply items-center justify-between mb-3 sm:flex
 }
 .timeline-time {
-  @apply mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0
+  @apply mb-1 text-xs font-normal text-neutral-400 sm:order-last sm:mb-0
 }
 .timeline-text {
-  @apply text-sm font-normal text-gray-500 dark:text-gray-300
+  @apply text-sm font-normal text-neutral-500 dark:text-neutral-300
 }
 .timeline-text-feat {
-  @apply font-semibold text-blue-600 dark:text-blue-500
+  @apply font-semibold text-[#6e57b2] dark:text-white
 }
 .timeline-text-box {
-  @apply bg-gray-100 text-gray-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300
+  @apply bg-neutral-100 text-neutral-800 text-xs font-normal mr-2 px-2.5 py-0.5 rounded dark:bg-neutral-600 dark:text-neutral-300
 }
 .timeline-wrap-desc {
-  @apply p-3 text-xs italic font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300
+  @apply p-3 text-xs italic font-normal text-neutral-500 border border-neutral-200 rounded-lg bg-neutral-50 dark:bg-neutral-600 dark:border-neutral-500 dark:text-neutral-300
 }
 
 /* 7. FORMS 
@@ -170,20 +170,17 @@
  */
 
 .form-wrap {
-  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 focus-visible:!ring-blue-500 focus-visible:!border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+  @apply bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-[#6e57b2] focus:border-[#6e57b2] focus-visible:!ring-[#6e57b2] focus-visible:!border-[#6e57b2] block w-full p-4 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-white dark:focus:border-white
 }
 .form-label {
-  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+  @apply block mb-2 text-sm font-medium text-neutral-900 dark:text-white
 }
 .form-helper {
-  @apply mt-2 text-sm text-gray-500 dark:text-gray-400
-}
-.form-checkbox {
-  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600
+  @apply mt-2 text-sm text-neutral-500 dark:text-neutral-400
 }
 .form-checkbox-label {
-  @apply font-medium text-gray-900 dark:text-gray-300
+  @apply font-medium text-neutral-900 dark:text-neutral-300
 }
 .form-checkbox-helper {
-  @apply text-xs font-normal text-gray-500 dark:text-gray-400
+  @apply text-xs font-normal text-neutral-500 dark:text-neutral-400
 }

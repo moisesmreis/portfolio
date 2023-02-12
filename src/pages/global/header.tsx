@@ -2,8 +2,12 @@ import Link from "next/link"
 import ButtonLight from "../components/buttonLight"
 import ButtonIcon from "../components/buttonIcon"
 import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon, ArrowRightIcon } from "@radix-ui/react-icons"
+import { useTheme } from "next-themes";
 
 export default function Header() {
+
+    const {theme, setTheme} = useTheme()
+
     return (
         <>
             <header className="grid-header" id="header-wrapper">
@@ -15,10 +19,6 @@ export default function Header() {
                 <div className="!hidden xl:!flex flex-sub-header" id="header-lang">
                     <ButtonLight childIcon={<ArrowRightIcon />}>Port</ButtonLight>
                     <ButtonLight childIcon={<ArrowRightIcon />}>Eng</ButtonLight>
-                </div>
-                <div className="!hidden xl:!flex flex-sub-header" id="header-theme">
-                    <ButtonLight childIcon={<SunIcon />}>Light</ButtonLight>
-                    <ButtonLight childIcon={<MoonIcon />}>Dark</ButtonLight>
                 </div>
                 <div className="flex-sub-header" id="header-social">
                     <Link className="!hidden xl:!block w-fit" href="https://twitter.com/MoissMoreiraRe1">
@@ -33,6 +33,13 @@ export default function Header() {
                     <Link className="!block xl:!hidden w-fit" href="https://github.com/moisesmreis">
                         <ButtonIcon childIcon={<GitHubLogoIcon />} />
                     </Link>
+                </div>
+                <div className="xl:!justify-end flex-sub-header" id="header-theme">
+                {theme === 'light' ? (
+                    <ButtonLight childIcon={<MoonIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Dark</ButtonLight>
+                ) : (
+                    <ButtonLight childIcon={<SunIcon />} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>Light</ButtonLight>
+                )}
                 </div>
             </header>
         </>
