@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import FormContato from './components/formContato'
+import { Form } from './components/formContato'
 
 export default function Contato() {
+
   return (
     <>
       <Head>
@@ -15,7 +16,7 @@ export default function Contato() {
         <h1 className="title-big max-w-[36rem]">Preencha esse formulário e entrarei em contato rapidinho ⚡</h1>
       </header>
       <section className="flex-row-center pb-12 px-12">
-        <FormContato />
+        <Form />
       </section>
     </>
   )

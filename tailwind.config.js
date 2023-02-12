@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite-react/**/*.js",
   ],
+  darkMode: "class", 
   theme: {
     fontFamily: {
       'body': ['Satoshi'],
