@@ -4,7 +4,6 @@ import { useState } from "react";
 import { validate } from "../utils/validate";
 import Input from "./input";
 import TextArea from "./textArea";
-import { ComponentInstanceIcon } from "@radix-ui/react-icons";
 
 interface IValues {
     name: string;
@@ -71,7 +70,7 @@ export const Form = () => {
     };
 
     return (
-        <form className="w-full !max-w-[36rem]" onSubmit={handleSubmit}>
+        <form className="px-12 pb-12" onSubmit={handleSubmit}>
             {success !== false ? (
                 <Input disabled value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
             ) : (
@@ -88,9 +87,9 @@ export const Form = () => {
                 <TextArea value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
             )}
             {success !== false ? (
-                <button className="button-light select-none opacity-70 hover:bg-white dark:hover:bg-neutral-800" type="submit" disabled>Deu tudo certo ✅</button>
+                <button className="button-main select-none opacity-70 hover:bg-white dark:hover:bg-neutral-800" type="submit" disabled>Deu tudo certo ✅</button>
             ) : (
-                <button className="button-light" type="submit">Vamos começar 💪</button>
+                <button className="button-main" type="submit">Vamos começar 💪</button>
             )}
         </form>
     );

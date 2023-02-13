@@ -105,11 +105,8 @@
  * control the button items on the UI
  */
 
-.button-light {
+.button-main {
   @apply flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
-}
-.button-cta {
-  @apply w-fit flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
 }
 .button-basic {
   @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline;

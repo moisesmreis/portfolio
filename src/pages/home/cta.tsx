@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import Badge from "../components/badge"
-import ButtonCta from "../components/buttonCta";
+import ButtonMain from '../components/buttonMain';
 
 const Cta = () => {
     return (
         <>
             <section className="grid-cta" id="home-cta">
                 <div className="flex-center-cta">
-                    <div id="cta-title">
+                    <header id="cta-title">
                         <h1 className="title-big">Meu nome é Moisés Reis e sou um <span className="underline decoration-3">web developer e designer</span> da Chapada Diamantina</h1>
-                    </div>
+                    </header>
                     <div className="flex-row-start flex-wrap gap-4" id="cta-badge">
                         <Badge>React</Badge>
                         <Badge>Vue</Badge>
@@ -21,7 +21,7 @@ const Cta = () => {
                 </div>
                 <div className="flex-center-cta">
                     <Link className="w-fit" href="/contato">
-                        <ButtonCta>Fale comigo 👋</ButtonCta>
+                        <ButtonMain>Fale comigo 👋</ButtonMain>
                     </Link>
                 </div>
             </section>
