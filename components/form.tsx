@@ -1,7 +1,7 @@
 // components/contactForm/Form.tsx
 import axios from "axios";
 import { useState } from "react";
-import { validate } from "../utils/validate";
+import { validate } from "../src/pages/utils/validate";
 import Input from "./input";
 import TextArea from "./textArea";
 

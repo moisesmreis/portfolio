@@ -1,4 +1,4 @@
-import ButtonBasic from "../components/buttonBasic"
+import ButtonBasic from "../../../components/buttonBasic"
 import Link from "next/link"
 
 export default function Footer() {

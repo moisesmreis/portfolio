@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Badge from "../components/badge"
-import ButtonMain from '../components/buttonMain';
+import Badge from "../../../components/badge"
+import ButtonMain from '../../../components/buttonMain';
 
 const Cta = () => {
     return (
