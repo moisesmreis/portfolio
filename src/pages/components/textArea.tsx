@@ -15,7 +15,7 @@ const TextArea = ({ id, name, label, placeholder, error, errorMessage, ...props 
         <div className="mb-6">
             <label className="form-label" htmlFor={id}>{label}</label>
             <textarea {...props} id={id} name={name} rows={8} placeholder={placeholder} className="form-wrap"></textarea>
-            {error && <p className="mt-2 text-sm text-pink-600">*{errorMessage}</p>}
+            {error && <p className="badge-main w-fit mt-3">{errorMessage}</p>}
         </div>
     );
 };

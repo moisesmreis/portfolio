@@ -4,6 +4,7 @@ import { useState } from "react";
 import { validate } from "../utils/validate";
 import Input from "./input";
 import TextArea from "./textArea";
+import { RocketIcon } from "@radix-ui/react-icons";
 
 interface IValues {
     name: string;
@@ -70,7 +71,7 @@ export const Form = () => {
     };
 
     return (
-        <form className="px-12 pb-12" onSubmit={handleSubmit}>
+        <form className="px-12 mb-12 relative" onSubmit={handleSubmit}>
             {success !== false ? (
                 <Input disabled value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
             ) : (
