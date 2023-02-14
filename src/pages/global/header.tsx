@@ -3,10 +3,13 @@ import ButtonMain from "../components/buttonMain"
 import ButtonIcon from "../components/buttonIcon"
 import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes";
+import { useState, useEffect } from 'react'
 
 export default function Header() {
-
+    const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
+    useEffect(() => setMounted(true), [])
+    if(!mounted) return null
 
     return (
         <>
