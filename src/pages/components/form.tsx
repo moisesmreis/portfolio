@@ -4,7 +4,6 @@ import { useState } from "react";
 import { validate } from "../utils/validate";
 import Input from "./input";
 import TextArea from "./textArea";
-import { RocketIcon } from "@radix-ui/react-icons";
 
 interface IValues {
     name: string;
