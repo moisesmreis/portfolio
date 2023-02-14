@@ -71,24 +71,24 @@ export const Form = () => {
     };
 
     return (
-        <form className="px-12 mb-12 relative" onSubmit={handleSubmit}>
+        <form className="px-6 xl:px-12 mb-12 relative" onSubmit={handleSubmit}>
             {success !== false ? (
-                <Input disabled value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
+                <Input disabled value={values.name} onChange={handleChange} id="name" name="name" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
             ) : (
-                <Input value={values.name} onChange={handleChange} id="name" name="name" label="Nome completo" helper="É só inserir o seu nome completo" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
+                <Input value={values.name} onChange={handleChange} id="name" name="name" placeholder="João Oliveira" error={!!errors.name} errorMessage={!!errors.name ? errors.name : ""} />
             )}
             {success !== false ? (
-                <Input disabled value={values.email} onChange={handleChange} id="email" name="email" label="Seu e-mail" helper="Preencha com um email válido" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
+                <Input disabled value={values.email} onChange={handleChange} id="email" name="email" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
             ) : (
-                <Input value={values.email} onChange={handleChange} id="email" name="email" label="Seu e-mail" helper="Preencha com um email válido" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
+                <Input value={values.email} onChange={handleChange} id="email" name="email" placeholder="meunome@seuemail.com" error={!!errors.email} errorMessage={!!errors.email ? errors.email : ""} />
             )}
             {success !== false ? (
-                <TextArea disabled value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
+                <TextArea disabled value={values.message} onChange={handleChange} id="message" name="message" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
             ) : (
-                <TextArea value={values.message} onChange={handleChange} id="message" name="message" label="Como posso ajudar?" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
+                <TextArea value={values.message} onChange={handleChange} id="message" name="message" placeholder="Então, eu queria um site que fizesse..." error={!!errors.message} errorMessage={!!errors.message ? errors.message : ""} />
             )}
             {success !== false ? (
-                <button className="button-main select-none opacity-70 hover:bg-white dark:hover:bg-neutral-800" type="submit" disabled>Deu tudo certo ✅</button>
+                <button className="button-main select-none opacity-70 hover:bg-white dark:hover:bg-neutral-800" type="submit" disabled>Deu tudo certo 🐕‍🦺</button>
             ) : (
                 <button className="button-main" type="submit">Vamos começar 💪</button>
             )}

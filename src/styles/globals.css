@@ -13,14 +13,8 @@
 /* Utilities and other classes */
 
 @layer utilities {
-  .grid-one-two {
-    @apply grid grid-cols-1 xl:grid-cols-2
-  }
   .grid-one-three {
     @apply grid grid-cols-1 xl:grid-cols-3
-  }
-  .grid-two-four {
-    @apply grid grid-cols-3 xl:grid-cols-4
   }
   .flex-row-center {
     @apply flex flex-row content-center justify-center items-center
@@ -34,9 +28,6 @@
   .flex-col-center {
     @apply flex flex-col justify-center content-center
   }
-  .absolute-center {
-    @apply left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]
-  }
 }
 
 /* 1. GRID 
@@ -48,13 +39,13 @@
   @apply grid grid-cols-2
 }
 .grid-cta {
-  @apply grid p-12 content-center gap-6
+  @apply grid p-6 xl:px-12 content-center gap-6 mb-6
 }
 .grid-timeline {
-  @apply p-12
+  @apply p-6 xl:px-12 mb-6
 }
 .grid-nav {
-  @apply grid-one-three gap-2
+  @apply grid-one-three gap-2 mb-6
 }
 .grid-sub-nav {
   @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 xl:p-12 rounded-2xl
@@ -66,7 +57,7 @@
  */
 
 .flex-sub-header {
-  @apply flex flex-row content-center items-center px-12 py-6 gap-6
+  @apply flex flex-row content-center items-center px-6 xl:px-12 py-6 gap-6
 }
 .flex-sub-cta {
   @apply flex-col-start gap-6 
@@ -75,7 +66,7 @@
   @apply flex-col-center gap-6 relative
 }
 .flex-footer-wrap {
-  @apply flex flex-col md:flex-row justify-start md:justify-between px-12 gap-6 xl:gap-12 mt-12
+  @apply flex flex-col md:flex-row justify-start md:justify-between px-6 xl:px-12 gap-6 xl:gap-12 mt-12
 }
 .flex-sub-footer-top {
   @apply py-0 xl:py-6 flex-col md:flex-row-center gap-12
@@ -97,10 +88,7 @@
   @apply text-4xl lg:text-5xl leading-snug font-black
 }
 .title-nav {
-  @apply lowercase text-white font-black
-}
-.title-section {
-  @apply lowercase font-black
+  @apply lowercase text-white font-medium underline
 }
 
 /* 4. BUTTONS 
@@ -170,17 +158,11 @@
  */
 
 .form-wrap {
-  @apply bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-[#6e57b2] focus:border-[#6e57b2] focus-visible:!ring-[#6e57b2] focus-visible:!border-[#6e57b2] block w-full p-4 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-white dark:focus:border-white
+  @apply bg-white border resize-none border-neutral-300 text-neutral-900 text-sm rounded-3xl focus:ring-[#6e57b2] focus:border-[#6e57b2] focus-visible:!ring-[#6e57b2] focus-visible:!border-[#6e57b2] block w-full p-4 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-white dark:focus:border-white
 }
 .form-label {
   @apply block mb-2 text-sm font-medium text-neutral-900 dark:text-white
 }
 .form-helper {
   @apply mt-2 text-sm text-neutral-500 dark:text-neutral-400
-}
-.form-checkbox-label {
-  @apply font-medium text-neutral-900 dark:text-neutral-300
-}
-.form-checkbox-helper {
-  @apply text-xs font-normal text-neutral-500 dark:text-neutral-400
 }

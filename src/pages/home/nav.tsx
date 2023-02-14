@@ -3,7 +3,7 @@ import Badge from "../components/badge";
 const Nav = () => {
     return (
         <>
-            <section className="px-12" id="home-nav">
+            <section className="px-6 xl:px-12" id="home-nav">
                 <div className="grid-nav">
                     <div className="bg-[#6e57b2] grid-sub-nav">
                         <h2 className="title-nav">Landing pages 🚀</h2>
