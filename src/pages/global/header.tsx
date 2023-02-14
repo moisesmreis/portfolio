@@ -1,7 +1,9 @@
 import Link from "next/link"
+import Image from "next/image"
 import ButtonMain from "../../components/buttonMain"
 import ButtonIcon from "../../components/buttonIcon"
 import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons"
+import Logo from '@/svg/logo.svg'
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react'
 
@@ -16,7 +18,7 @@ export default function Header() {
             <header className="grid-header" id="header-wrapper">
                 <div className="flex-sub-header justify-start" id="header-logo">
                     <Link href="/">
-                        <span className="title-logo">LM.</span>
+                        <Image src={Logo} className="w-16 h-16" alt=""></Image>
                     </Link>
                 </div>
                 <div className="flex-sub-header justify-end" id="header-social">
