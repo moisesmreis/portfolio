@@ -15,13 +15,18 @@ const Cta = () => {
                         <Badge>Vue</Badge>
                         <Badge>WordPress</Badge>
                         <Badge>Tailwind CSS</Badge>
+                        <Badge>Bootstrap</Badge>
+                        <Badge>Sendgrid</Badge>
                         <Badge>UI</Badge>
                         <Badge>UX</Badge>
+                        <Badge>Next.js</Badge>
+                        <Badge>Svelte</Badge>
+                        <Badge>Solid</Badge>
                     </div>
                 </div>
                 <div className="flex-center-cta">
                     <Link className="w-fit" href="/contato">
-                        <ButtonMain>Fale comigo 👋</ButtonMain>
+                        <ButtonMain>Me mande uma mensagem 📲</ButtonMain>
                     </Link>
                 </div>
             </section>

@@ -3,6 +3,7 @@ import Header from './global/header'
 import Cta from './home/cta'
 import Nav from './home/nav'
 import Timeline from './home/timeline'
+import Contact from './home/contact'
 import { Form } from './components/form'
 import Footer from './global/footer'
 
@@ -20,10 +21,7 @@ export default function Home() {
       <Cta />
       <Nav />
       <Timeline />
-      <header className="flex-row-start pb-12 px-12" id="contato-header">
-        <h1 className="title-big">Quer falar sobre algum projeto comigo? É enviar uma mensagem e falo com você rapidinho⚡</h1>
-      </header>
-      <Form />
+      <Contact />
       <Footer />
     </>
   )

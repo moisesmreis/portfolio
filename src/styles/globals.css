@@ -75,7 +75,7 @@
   @apply flex-col-center gap-6 relative
 }
 .flex-footer-wrap {
-  @apply flex flex-col md:flex-row justify-start md:justify-between px-12 gap-6 xl:gap-12
+  @apply flex flex-col md:flex-row justify-start md:justify-between px-12 gap-6 xl:gap-12 mt-12
 }
 .flex-sub-footer-top {
   @apply py-0 xl:py-6 flex-col md:flex-row-center gap-12
@@ -97,7 +97,10 @@
   @apply text-4xl lg:text-5xl leading-snug font-black
 }
 .title-nav {
-  @apply lowercase underline text-white font-medium
+  @apply lowercase text-white font-black
+}
+.title-section {
+  @apply lowercase font-black
 }
 
 /* 4. BUTTONS 
@@ -106,7 +109,7 @@
  */
 
 .button-main {
-  @apply flex flex-row gap-3 underline items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
+  @apply flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-300 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700
 }
 .button-basic {
   @apply flex flex-row gap-4 justify-start content-center items-center text-sm underline;
