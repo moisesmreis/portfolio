@@ -18,7 +18,7 @@ export default function Header() {
             <header className="grid-header" id="header-wrapper">
                 <div className="flex-sub-header justify-start" id="header-logo">
                     <Link href="/">
-                        <Image src={Logo} className="w-16 h-16" alt=""></Image>
+                        <span className="title-logo">LM.</span>
                     </Link>
                 </div>
                 <div className="flex-sub-header justify-end" id="header-social">

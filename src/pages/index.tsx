@@ -3,7 +3,6 @@ import Header from './global/header'
 import Cta from './home/cta'
 import Nav from './home/nav'
 import Timeline from './home/timeline'
-import { Form } from '../components/form'
 import Footer from './global/footer'
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <Cta />
       <Nav />
       <Timeline />
-      <Form />
       <Footer />
     </>
   )
