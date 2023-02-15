@@ -1,0 +1,5 @@
+# Add PWA
+# Edit README.md
+# Add Open Graph
+# Add Google Analytics
+# Add a logo
