@@ -1,9 +1,7 @@
 import Link from "next/link"
-import Image from "next/image"
 import ButtonMain from "../../components/buttonMain"
 import ButtonIcon from "../../components/buttonIcon"
 import { SunIcon, MoonIcon, TwitterLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons"
-import Logo from '@/svg/logo.svg'
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react'
 
