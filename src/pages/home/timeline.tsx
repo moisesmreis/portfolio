@@ -14,7 +14,7 @@ const Timeline = () => {
                         </div>
                     </li>
                     <li className="ml-6">
-                        <span className="timeline-circle">🫶</span>
+                        <span className="timeline-circle">🔥</span>
                         <div className="timeline-wrap">
                             <div className="timeline-wrap-sub-flex">
                                 <time className="timeline-time">2020</time>
