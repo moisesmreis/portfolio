@@ -1,5 +1,1 @@
 # Edit README.md
-# Not indexed on Google
-# Add Open Graph
-# Add Google Analytics
-# Add a logo
