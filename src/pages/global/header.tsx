@@ -29,7 +29,7 @@ export default function Header() {
                             </defs>
                             <g id="logo" clip-path="url(#clip_1)">
                                 <use xlinkHref="#artboard_1" stroke="none" fill="#FFFFFF" fill-opacity="0" />
-                                <g id="logo" transform="matrix(1.1483816E-06 1 -1 1.1483816E-06 260.99982 3.999878)" artboard="6c47d139-c017-4bb5-88fa-c3febcb09686">
+                                <g id="logo" transform="matrix(1.1483816E-06 1 -1 1.1483816E-06 260.99982 3.999878)">
                                     <g id="donut">
                                         <use stroke="none" fill="#D3D3D3" fill-opacity="0" xlinkHref="#path_1" fill-rule="evenodd" />
                                         <g clip-path="url(#clip_2)">
@@ -37,7 +37,7 @@ export default function Header() {
                                         </g>
                                     </g>
                                 </g>
-                                <g id="logo-2" transform="matrix(0.798633 -0.6018183 0.6018183 0.798633 -46.25763 106.80786)" artboard="dc860d63-99ea-4a05-ab0e-9a2274f62b9c">
+                                <g id="logo-2" transform="matrix(0.798633 -0.6018183 0.6018183 0.798633 -46.25763 106.80786)">
                                     <g id="donut">
                                         <use stroke="none" fill="#D3D3D3" fill-opacity="0" xlinkHref="#path_1" fill-rule="evenodd" />
                                         <g clip-path="url(#clip_2)">
