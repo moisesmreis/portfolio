@@ -48,7 +48,7 @@
   @apply grid-one-three gap-4 mb-6
 }
 .grid-sub-nav {
-  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 xl:p-12 rounded-2xl dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 rounded-2xl dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600
 }
 
 /* 2. FLEX 
@@ -66,7 +66,7 @@
   @apply flex-col-center gap-6 relative
 }
 .flex-footer-wrap {
-  @apply flex flex-col md:flex-row justify-start md:justify-between px-6 xl:px-12 gap-6 xl:gap-12 mt-12
+  @apply flex flex-col md:flex-row justify-start md:justify-between px-6 xl:px-12 gap-6 xl:gap-12 mt-12 md:mt-0
 }
 .flex-sub-footer-top {
   @apply py-0 xl:py-6 flex flex-col md:flex-row-center gap-4 md:gap-12

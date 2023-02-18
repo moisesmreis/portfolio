@@ -11,11 +11,11 @@ const Nav = () => {
                     </div>
                     <div className="bg-[#fc440f] grid-sub-nav">
                         <h2 className="title-nav">Blogs 📰</h2>
-                        <p className="text-white lowercase">Nós entendemos o valor de ter um blog bem estruturado e atraente para o seu público-alvo. Nós usamos o WordPress, a plataforma de blog mais popular do mundo, para criar blogs personalizados e profissionais que ajudam a construir sua marca e aumentar sua presença online</p>
+                        <p className="text-white lowercase">Eu entendo o valor de ter um blog bem estruturado e atraente para o seu público-alvo. Utilizo o WordPress, a plataforma de blogs mais popular do mundo, para criar blogs personalizados e profissionais que ajudam a construir sua marca e aumentar sua presença online</p>
                     </div>
                     <div className="bg-[#00072d] grid-sub-nav">
                         <h2 className="title-nav">E-commerce 🛒</h2>
-                        <p className="text-white lowercase">Combinamos a plataforma de comércio eletrônico mais popular do mundo, o WordPress, com design personalizado para criar uma solução única e eficiente para suas necessidades de negócios. Não importa se você vende produtos físicos ou digitais, nós podemos ajudá-lo a construir uma loja online atraente, segura e fácil de usar para seus clientes</p>
+                        <p className="text-white lowercase">Combino a plataforma de comércio eletrônico mais popular do planeta, o WordPress, com design personalizado para criar uma solução única e eficiente para suas necessidades de negócios. Não importa se você vende produtos físicos ou digitais, posso ajudá-lo a construir uma loja online atraente, segura e fácil de usar para seus clientes</p>
                     </div>
                 </div>
             </section>

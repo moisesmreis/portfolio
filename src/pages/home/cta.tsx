@@ -16,7 +16,7 @@ const Cta = () => {
                         <Badge>WordPress</Badge>
                         <Badge>Tailwind CSS</Badge>
                         <Badge>Bootstrap</Badge>
-                        <Badge>Sendgrid</Badge>
+                        <Badge>Nuxt.js</Badge>
                         <Badge>UI</Badge>
                         <Badge>UX</Badge>
                         <Badge>Next.js</Badge>
