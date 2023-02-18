@@ -45,10 +45,10 @@
   @apply p-6 xl:px-12 mb-6
 }
 .grid-nav {
-  @apply grid-one-three gap-2 mb-6
+  @apply grid-one-three gap-4 mb-6
 }
 .grid-sub-nav {
-  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 xl:p-12 rounded-2xl
+  @apply relative overflow-hidden gap-6 grid justify-start content-start p-6 xl:p-12 rounded-2xl dark:bg-neutral-700 border border-neutral-200 dark:border-neutral-600
 }
 
 /* 2. FLEX 
@@ -69,10 +69,10 @@
   @apply flex flex-col md:flex-row justify-start md:justify-between px-6 xl:px-12 gap-6 xl:gap-12 mt-12
 }
 .flex-sub-footer-top {
-  @apply py-0 xl:py-6 flex-col md:flex-row-center gap-12
+  @apply py-0 xl:py-6 flex flex-col md:flex-row-center gap-4 md:gap-12
 }
 .flex-sub-footer-bottom {
-  @apply pt-0 md:pt-6 pb-6 xl:py-6 justify-start md:flex-row-center items-center
+  @apply pt-0 md:pt-6 pb-6 xl:py-6 mt-4 md:mt-0 justify-start md:flex-row-center items-center
 }
 
 /* 3. TIPOGRAPHY 

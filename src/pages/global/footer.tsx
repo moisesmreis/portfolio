@@ -9,9 +9,6 @@ export default function Footer() {
                     <Link className="w-fit" href="/">
                         <ButtonBasic>Início</ButtonBasic>
                     </Link>
-                    <Link className="w-fit" href="/contato">
-                        <ButtonBasic>Contato</ButtonBasic>
-                    </Link>
                     <Link className="w-fit" href="https://github.com/moisesmreis">
                         <ButtonBasic>Github</ButtonBasic>
                     </Link>
