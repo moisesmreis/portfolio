@@ -7,16 +7,16 @@ export default function Footer() {
             <footer className="flex-footer-wrap">
                 <div className="flex-sub-footer-top">
                     <Link className="w-fit" href="/">
-                        <ButtonBasic>Início</ButtonBasic>
+                        <ButtonBasic aria-label="Homepage">Início</ButtonBasic>
                     </Link>
                     <Link className="w-fit" href="https://github.com/moisesmreis">
-                        <ButtonBasic>Github</ButtonBasic>
+                        <ButtonBasic aria-label="Github">Github</ButtonBasic>
                     </Link>
                     <Link className="w-fit" href="https://twitter.com/MoissMoreiraRe1">
-                        <ButtonBasic>Twitter</ButtonBasic>
+                        <ButtonBasic aria-label="Twitter">Twitter</ButtonBasic>
                     </Link>
                     <Link className="w-fit" href="https://www.linkedin.com/in/moisesmoreirareis/">
-                        <ButtonBasic>Linkedin</ButtonBasic>
+                        <ButtonBasic aria-label="Linkedin">Linkedin</ButtonBasic>
                     </Link>
                 </div>
                 <div className="flex-sub-footer-bottom">

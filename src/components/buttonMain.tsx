@@ -7,9 +7,9 @@ interface Props {
   onClick?: () => void;
 }
 
-const ButtonMain: React.FC<Props> = ({ children, childIcon, onClick }) => { 
+const ButtonMain: React.FC<Props> = ({ children, childIcon, onClick, ...attributes }) => { 
   return (
-    <button className="button-main" onClick={onClick}>
+    <button className="button-main" onClick={onClick} {...attributes}>
       {childIcon}
       <span>{children}</span>
     </button>

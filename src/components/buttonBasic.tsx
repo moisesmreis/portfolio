@@ -5,9 +5,9 @@ interface Props {
     children: React.ReactNode;
 }
 
-const ButtonBasic: React.FC<Props> = ({ children }) => {
+const ButtonBasic: React.FC<Props> = ({ children, ...attributes }) => {
     return (
-        <button className="button-basic">
+        <button className="button-basic" {...attributes}>
             <span>{children}</span>
         </button>
     );

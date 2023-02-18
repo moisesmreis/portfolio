@@ -5,9 +5,9 @@ interface Props {
   childIcon: React.ReactNode;
 }
 
-const ButtonIcon: React.FC<Props> = ({ childIcon }) => { 
+const ButtonIcon: React.FC<Props> = ({ childIcon, ...attributes }) => { 
   return (
-    <button className="button-icon">
+    <button className="button-icon" {...attributes}>
       {childIcon}
     </button>
   );
