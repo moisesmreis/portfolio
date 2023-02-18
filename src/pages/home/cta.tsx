@@ -26,7 +26,7 @@ const Cta = () => {
                 </div>
                 <div className="flex-center-cta">
                     <Link className="w-fit" href="https://wa.me/5574999587898?text=Opa!%20Que%20tal%20come%C3%A7armos%20a%20conversar%20e%20discutirmos%20seu%20projeto%3F%20Me%20fale%20o%20que%20voc%C3%AA%20precisa%20%F0%9F%90%95%E2%80%8D%F0%9F%A6%BA">
-                        <ButtonMain aria-label="Contato">Me mande uma mensagem 📲</ButtonMain>
+                        <ButtonMain aria-label="Contato">Me mande uma mensagem ✨</ButtonMain>
                     </Link>
                 </div>
             </section>
