@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Header from './global/header'
-import Cta from './home/cta'
-import Nav from './home/nav'
-import Timeline from './home/timeline'
-import Footer from './global/footer'
+import Header from '../components/header'
+import Cta from '../components/cta'
+import Services from '../components/services'
+import Timeline from '../components/timeline'
+import Footer from '../components/footer'
 
 export default function Home() {
 
@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <Header />
       <Cta />
-      <Nav />
+      <Services />
       <Timeline />
       <Footer />
     </>

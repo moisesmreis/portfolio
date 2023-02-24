@@ -9,7 +9,7 @@ interface Props {
 
 const ButtonMain: React.FC<Props> = ({ children, childIcon, onClick, ...attributes }) => { 
   return (
-    <button className="button-main" onClick={onClick} {...attributes}>
+    <button className="flex flex-row gap-3 items-center justify-center content-center text-neutral-900 bg-white border border-neutral-200 focus:outline-none hover:bg-neutral-100 focus:ring-4 focus:ring-neutral-200 font-medium rounded-full text-sm px-5 py-2.5 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 dark:hover:bg-neutral-700 dark:hover:border-neutral-600 dark:focus:ring-neutral-700" onClick={onClick} {...attributes}>
       {childIcon}
       <span>{children}</span>
     </button>
